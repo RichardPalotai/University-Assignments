@@ -3,7 +3,7 @@ This repository contains all the important assignments I worked on
 
 Instructions to run the projects:
 
-  HTML&CSS: Just double click the index.html
+  HTML&CSS / JavaScript: Just double click the index.html
   
   C:
     1. Open a terminal and navigate into the folder
