@@ -1,0 +1,12 @@
+.img_print {
+    width: 8rem !important;
+    height: auto;
+}
+
+header, footer, .button_print, caption, video, .form_print{
+    display: none;
+}
+
+p {
+    font-size: 0.5rem;
+}

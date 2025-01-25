@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="icons/favicon.png" rel="icon">
+    <link href="css/alap.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+    <title>Jelentkezés - Képernyő Kritika</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #E0E0E0 !important;">
+            <div class="container-fluid">
+                <h2 class="visually-hidden">Ugrás az oldalon belül</h2>
+                <a href="#tartalom" class="visually-hidden-focusable">Ugrás a tartalomra</a>
+                <a href="#tema" class="visually-hidden-focusable">Téma</a>
+                <a href="#jelentkezes" class="visually-hidden-focusable">Jelentkezés</a>
+                <a href="#kapcsolat" class="visually-hidden-focusable">Kapcsolat</a>
+                <a class="navbar-brand" href="index.html">
+                    <h1>Képernyő Kritika</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-lg-between" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Kezdőoldal</a>
+                        <a class="nav-link" href="velemenyek.html">Vélemények</a>
+                        <a class="nav-link" href="esemenyek.html">Események</a>
+                        <a class="nav-link active" aria-current="page" href="jelentkezes.html">Jelentkezés</a>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-end">
+                        <a href="https://www.tumblr.com"><img src="icons/tumblr.png" alt="tumblr" class="icon_img"></a>
+                        <a href="http://reddit.com"><img src="icons/reddit.png" alt="reddit" class="icon_img"></a>
+                        <a href="http://twitter.com"><img src="icons/twitter_x.png" alt="twitter/x"
+                                class="icon_img"></a>
+                        <a href="http://youtube.com"><img src="icons/youtube.png" alt="youtube" class="icon_img"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="tartalom">
+        <section id="tema">
+            <h1 style="text-align: center;">Heti trivia est</h1>
+            <h2 style="text-align: center;">Téma</h2>
+            <hr class="hr_section">
+            <div class="container">
+                <div class="row justify-content-center mt-3 text-center align-items-center"
+                    style="margin-bottom: 20px;">
+                    <div class="col-lg-6 mb-3 mb-md-0 col-md-12 col-sm-12">
+                        <video controls src="media/ModernFamily.mp4" poster="media/Cover.png"
+                            class="img-fluid rounded"></video>
+                        <a href="video.html" class="review_links button_print">Leírás a videóhoz</a>
+                    </div>
+                    <div class="col-lg-6 mb-3 mb-md-0" style="text-align: justify;">
+                        <hr class="hr_content">
+                        <article>
+                            <h3 style="text-align: center;">Modern Család</h3>
+                            <p>A "Modern család" egy ikonikus amerikai televíziós sorozat, amely megváltoztatta a
+                                komédia
+                                műfaját, és generációk számára vált szeretett kedvencévé. A sorozatot Christopher
+                                Lloyd és
+                                Steven Levitan alkotta, és 2009-ben debütált az ABC csatornán. Az "Modern család"
+                                középpontjában
+                                három különböző család áll, akik mind eltérő módon reprezentálják a modern család
+                                dinamikáját és
+                                változatosságát. Az egyik család a tradicionális szülői modellt követi: Phil és
+                                Claire
+                                Dunphy,
+                                akik házasok és három gyermeket nevelnek. A második család egy meleg párt, Mitchell
+                                Pritchettet
+                                és Cameron Tuckert alakítják, akik egy örökbefogadott kislányt nevelnek. A harmadik
+                                család
+                                pedig
+                                Jay Pritchett patriarchája, aki újabb házassága révén fiatalabb feleséggel,
+                                Gloria-val van
+                                együtt, aki saját gyermekével, Manny-vel érkezik a kapcsolatba. A sorozat a
+                                hétköznapi
+                                helyzeteket humorosan ábrázolja, miközben olyan témákat boncolgat, mint a családi
+                                értékek,
+                                az
+                                elfogadás és a változásokhoz való alkalmazkodás.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="jelentkezes" class="form_print">
+            <h2 style="text-align: center;">Jelentkezés</h2>
+            <hr class="hr_section">
+            <div class="container">
+                <div class="row justify-content-center mt-3 text-center align-items-center"
+                    style="margin-bottom: 20px;">
+                    <div class="col-lg-6 mb-3 mb-md-0 col-md-12 col-sm-12" style="text-align: justify;">
+                        <form action="mailto:kepernyo.kritika@gmail.com" method="post" enctype="text/plain">
+                            <fieldset>
+                                <legend>Nevezz!</legend>
+
+                                <label for="cs"><strong>Csapatod neve</strong></label><br>
+                                <input type="text" name="csapat" id="cs" maxlength="20"><br>
+
+                                <label for="r"><strong>Résztvevők</strong></label><br>
+                                <input type="text" name="resztvevok" id="r"
+                                    placeholder="Pl.: Kata, Ricsi, Zsófi, ..." size="45" maxlength="50"><br>
+
+                                <label for="m"><strong>Megjegyzés</strong></label><br>
+                                <textarea name="megjegyzes" id="m" cols="50" rows="5"
+                                    placeholder="Bármi a témával vagy szabályokkal kapcsolatos kérdés" maxlength="200"></textarea>
+
+                                <aside>
+                                    <p>
+                                        Szeretnél vacsora menüt a csapatodnak?<br>
+                                        <input type="radio" name="vacsora" id="v1" value="1">
+                                        <label for="v1">igen</label>
+                                        /
+                                        <input type="radio" name="vacsora" id="v2" value="0">
+                                        <label for="v2">nem</label><br>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" name="hirlevel" id="hirlevel" value="igen">
+                                        <label for="hirlevel">Szeretnék értesülni a jövőbeli trivia estekről</label><br>
+                                    </p>
+                                </aside>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Adatok elküldése</legend>
+                                <input type="submit" value="Elküld" class="btn btn-primary">
+                                <input type="reset" value="Töröl" class="btn btn-danger">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 mb-3 mb-md-0 col-md-12 col-sm-12"
+                        style="text-align: justify;margin-top: 10px;">
+                        <div class="carousel slide" id="carouselExampleIndicators">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="media/Garden_C1.jpg" class="d-block w-100 rounded"
+                                        alt="Pillanatkép a Kerti Kritika vetítésről">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/Bar_C2.jpg" class="d-block w-100 rounded"
+                                        alt="Kép a Sorozat Sörözés eseményről">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/Cafe_C3.jpg" class="d-block w-100 rounded"
+                                        alt="Kép egy kávézóban ahol a Kávés Krimik esemény volt">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/RoundTable_C4.jpg" class="d-block w-100 rounded"
+                                        alt="Kép egy asztalról">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kapcsolat">
+        <h2 style="font-variant: small-caps;">kapcsolat</h2>
+        <address><a href="mailto:kepernyo.kritika@gmail.com" class="mail_link"><strong>kepernyo.kritika@gmail.com</strong></a>
+        </address>
+        <div>
+            <a href="https://www.tumblr.com"><img src="icons/tumblr.png" alt="tumblr" class="icon_img"></a>
+            <a href="http://reddit.com"><img src="icons/reddit.png" alt="reddit" class="icon_img"></a>
+            <a href="http://twitter.com"><img src="icons/twitter_x.png" alt="twitter/x" class="icon_img"></a>
+            <a href="http://youtube.com"><img src="icons/youtube.png" alt="youtube" class="icon_img"></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Bootstrap 5 requires both Popper.js and Bootstrap's JavaScript) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
