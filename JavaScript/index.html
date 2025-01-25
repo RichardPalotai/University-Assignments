@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pics/logo.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Railways</title>
+</head>
+
+<body style="background-color: antiquewhite;">
+    <div class="main-page" id="MainPage">
+        <h1>Railways</h1>
+        <input type="text" id="name" class="name-field" placeholder="ADD MEG A NEVED!">
+        <div class="button-group">
+            <div class="difficulty-buttons">
+                <h2>ÁLLÍTSA BE A NEHÉZSÉGET!</h2>
+                <input type="radio" id="easy" name="difficulty" value="easy">
+                <label for="easy">5 X 5</label>
+                <input type="radio" id="hard" name="difficulty" value="hard">
+                <label for="hard">7 X 7</label>
+            </div>
+
+            <div class="game-buttons">
+                <button id="description">LEÍRÁS</button>
+                <button id="StartGame">JÁTÉK INDÍTÁSA</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="PopUp" class="popup">
+        <div id="PopUpContent" class="popup-content">
+            <span id="ClosePopUp" class="close">&times;</span>
+        </div>
+    </div>
+
+    <div class="game-page" id="GamePage">
+        <h1>Railways</h1>
+        <div class="content">
+            <div class="data">
+                <div class="name-field">
+                    <h2>ÚTVONALTERVEZŐ:</h2>
+                    <span id="nameDisplay">######</span>
+                    <hr style="color: antiquewhite;">
+                    <h2>ELTELT IDŐ:</h2>
+                    <span id="timer">00:00</span>
+                </div>
+            </div>
+            <div class="table-div" id="TableDiv">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

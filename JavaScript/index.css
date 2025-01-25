@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    background-image: url('pics/rails.png');
+    background-size: cover;
+}
+h1 {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    justify-content: center;
+    color: #4f4f4f;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b4bfa3;
+    font-size: 20px;
+}
+.hidden {
+    display: none;
+}
+
+/* Overlay background */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* High z-index to ensure it’s in front */
+}
+
+/* Style for the title */
+#popup-content h2 {
+    font-size: 1.5em;
+    color: #88a14e; /* A soft green color for emphasis */
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Style for the description */
+#popup-content p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Style for the list title */
+#popup-content h2 + h2 {
+    font-size: 1.2em;
+    color: #88a14e;
+    margin-top: 15px;
+}
+
+/* Style for the list */
+#popup-content ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove left padding */
+    margin: 0; /* Remove top margin */
+    text-align: left;
+}
+
+/* Style for each list item */
+#popup-content ul li {
+    font-size: 1em;
+    padding: 5px 0;
+    color: #333;
+    text-transform: capitalize;
+    margin-left: 5px; /* Add a small left margin if needed */
+}
+
+
+/* Modal content styling */
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 10000; /* Ensure content is above the overlay */
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.data {
+    margin-right: 50px;
+}
+
+.name-field {
+    text-transform: uppercase;
+    display: inline-block;
+    border: 3px solid #a28257; /* Border style, width, and color */
+    border-radius: 8px;
+    padding: 15px 45px;
+    color: black;
+
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.table-div{
+    border: 8px solid #a28257;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+}
+
+.button-group, .content{
+    display: flex;          /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space evenly between the divs */
+    align-items: center;        /* Vertically aligns items in the center */
+    gap: 20px;                  /* Adds gap between the two divs */
+    margin-top: 5px;
+}
+
+.difficulty-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+
+    border: 3px solid #b4bfa3;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.difficulty-buttons label {
+    display: inline-block;
+    border: 3px solid #b4bfa3; /* Border style, width, and color */
+    border-radius: 8px;
+    margin: 0px;
+    padding: 15px 30px;
+    color: #4f4f4f;
+    
+    background-color: white; /* Light green background */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.difficulty-buttons label:hover {
+    background-color: #eaefd3; /* Slightly darker on hover */
+}
+.difficulty-buttons input {
+    display: none;
+}
+.difficulty-buttons input:checked + label {
+    background-color: #b4bfa3; /* Selected button color */
+}
+.difficulty-buttons input:checked + label:hover {
+    background-color: #b4bfa3; /* Hover effect when selected */
+}
+
+.game-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.game-buttons button {
+    display: inline-block;
+    border: 3px solid #b4bfa3; /* Border style, width, and color */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px 30px;
+    color: #4f4f4f;
+
+    background-color: #eaefd3; /* Light green background */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.game-buttons button:hover {
+    background-color: #b4bfa3; /* Hover effect when selected */
+}
