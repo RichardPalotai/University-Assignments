@@ -1,0 +1,93 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:BlackHole.Avalonia.ViewModels"
+             xmlns:v="clr-namespace:BlackHole.Avalonia.Views"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="600"
+             x:Class="BlackHole.Avalonia.Views.MainView"
+             x:DataType="vm:BlackHoleViewModel"
+             d:DataContext="{x:Static v:DesignData.ViewModel}">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<Menu Grid.Row="0">
+			<MenuItem Header="File">
+				<MenuItem Header="New Game" Command="{Binding NewGameCommand}" />
+				<MenuItem Header="Load Game" Command="{Binding LoadGameCommand}" />
+				<MenuItem Header="Save Game" Command="{Binding SaveGameCommand}" />
+			</MenuItem>
+			<MenuItem Header="Settings">
+				<MenuItem Header="Set Map Size">
+					<!-- Wrap TextBox and Button in a horizontal StackPanel -->
+					<StackPanel Orientation="Horizontal">
+						<TextBox Text="{Binding MapSize, UpdateSourceTrigger=PropertyChanged}"
+								 Height="20" Width="80" Margin="0,0,5,0"/>
+						<Button Content="Apply" Command="{Binding ApplyMapSizeCommand}" />
+					</StackPanel>
+				</MenuItem>
+			</MenuItem>
+		</Menu>
+
+		<Viewbox Grid.Row="1">
+			<ItemsControl ItemsSource="{Binding Fields}">
+				<!--az mezőket tároló vezérlő-->
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<!--a gombokat egy rácsba fűzzük fel-->
+						<UniformGrid Rows="{Binding GetMapSize}" Columns="{Binding GetMapSize}" />
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>
+				<ItemsControl.ItemTemplate>
+					<!--az elemek gombok lesznek-->
+					<DataTemplate>
+						<Button Tag="{Binding FieldValue}" Command="{Binding ClickCommand}" CommandParameter="{Binding XY}"
+								Width="100" Height="100"
+								Focusable="False" FontSize="36" FontWeight="Bold"
+								HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+								BorderThickness="1" BorderBrush="Black">
+							<Button.Styles>
+								<!-- megadjuk a feltételes színosztályok stílusát -->
+								<Style Selector="Button[Tag=EMPTY]">
+									<Setter Property="Background" Value="White" />
+								</Style>
+								<Style Selector="Button[Tag=BLACKHOLE]">
+									<Setter Property="Background" Value="Black" />
+								</Style>
+								<Style Selector="Button[Tag=RED]">
+									<Setter Property="Background" Value="Red" />
+								</Style>
+								<Style Selector="Button[Tag=BLUE]">
+									<Setter Property="Background" Value="Blue" />
+								</Style>
+							</Button.Styles>
+						</Button>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</Viewbox>
+
+		<Border Grid.Row="2" BorderBrush="Black" BorderThickness="0 1 0 0">
+			<StackPanel  Orientation="Horizontal">
+				<!-- státuszsor a lépésszámhoz és az időhöz -->
+				<TextBlock Text="Turn: " Margin="10 2 2 2" />
+				<TextBlock Text="{Binding CurrentPlayer}" Margin="2" />
+				<TextBlock Text=" | " Margin="2" />
+				<TextBlock Text="Time: " Margin="2" />
+				<TextBlock Text="{Binding GameTime}" Margin="2" />
+				<TextBlock Text=" | " Margin="2" />
+				<TextBlock Text="RED: " Margin="2" />
+				<TextBlock Text="{Binding RedShipsIn}" Margin="2" />
+				<TextBlock Text=" | " Margin="2" />
+				<TextBlock Text="BLUE: " Margin="2" />
+				<TextBlock Text="{Binding BlueShipsIn}" Margin="2" />
+			</StackPanel>
+		</Border>
+	</Grid>
+</UserControl>
+
