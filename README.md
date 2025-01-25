@@ -1,5 +1,5 @@
 # University-Assignments
-This repository contains all the important assignments I worked on during my undergraduate year.
+This repository contains all the important assignments I worked on during my undergraduate years.
 
 Instructions to run the projects:
 
