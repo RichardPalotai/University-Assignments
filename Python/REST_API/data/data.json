@@ -1,0 +1,85 @@
+{
+    "Users": [
+        {
+            "id": 1,
+            "name": "Banános Joe",
+            "email": "bjoe@redneckcity.com"
+        },
+        {
+            "id": 2,
+            "name": "Almás Anna",
+            "email": "anna@fruitworld.com"
+        },
+        {
+            "id": 3,
+            "name": "Körtés Károly",
+            "email": "karoly@pearparadise.com"
+        },
+        {
+            "id": 4,
+            "name": "Péter Gábor",
+            "email": "pgabor@valami.com"
+        }
+    ],
+    "Baskets": [
+        {
+            "id": 101,
+            "user_id": 1,
+            "items": [
+                {
+                    "item_id": 202,
+                    "name": "Körte",
+                    "brand": "Vilmos",
+                    "price": 12.49,
+                    "quantity": 1
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "user_id": 2,
+            "items": [
+                {
+                    "item_id": 203,
+                    "name": "Banán",
+                    "brand": "Chiquita",
+                    "price": 5.99,
+                    "quantity": 7
+                },
+                {
+                    "item_id": 204,
+                    "name": "Narancs",
+                    "brand": "Valencia",
+                    "price": 8.49,
+                    "quantity": 3
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "user_id": 3,
+            "items": [
+                {
+                    "item_id": 203,
+                    "name": "Banán",
+                    "brand": "Chiquita",
+                    "price": 5.99,
+                    "quantity": 10
+                }
+            ]
+        },
+        {
+            "id": 104,
+            "user_id": 4,
+            "items": [
+                {
+                    "item_id": 203,
+                    "name": "Banán",
+                    "brand": "Chiuita",
+                    "price": 5.99,
+                    "quantity": 4
+                }
+            ]
+        }
+    ]
+}
