@@ -29,5 +29,6 @@ Instructions to run the projects: (Only the projects where runing it is not self
     2. Click on the BlackHole.sln file (This step assumes you have Visual Studio and the Avalonia/Avalonia_Templates extensions for Visual Studio downloaded)
     3. Build the project first and then run it (Set the start up project to: BlackHole_WinForms/BlackHole_WPF/BlackHole.Avalonia.Android/BlackHole.Avalonia.Desktop)
   - **Software Technology, Git managing and CI (Team Work):**
-    - See more: [TransportTycoon](https://github.com/RichardPalotai/TransportTycoon)
     > TransportTycoon project files are in another repository
+    - See more: [TransportTycoon](https://github.com/RichardPalotai/TransportTycoon)
+    
