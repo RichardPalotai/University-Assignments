@@ -17,8 +17,8 @@ Instructions to run the projects: (Only the projects where runing it is not self
 
 ## C#:
   - **Event-Driven focused applications:**
-    1. Download the folder from any of the three assignment folders which strat with Windows_Forms/WPF/Avalonia
-    2. Click on the BlackHole.sln file (This step assumes you have Visual Studio and the Avalonia/Avalonia_Templates extensions for Visual Studio downloaded)
-    3. Build the project first and then run it (Set the start up project to: BlackHole_WinForms/BlackHole_WPF/BlackHole.Avalonia.Android/BlackHole.Avalonia.Desktop)
+    I. Download the folder from any of the three assignment folders which strat with Windows_Forms/WPF/Avalonia
+    II. Click on the BlackHole.sln file (This step assumes you have Visual Studio and the Avalonia/Avalonia_Templates extensions for Visual Studio downloaded)
+    III. Build the project first and then run it (Set the start up project to: BlackHole_WinForms/BlackHole_WPF/BlackHole.Avalonia.Android/BlackHole.Avalonia.Desktop)
   - **Software Technology, Git managing and CI (Team Work):**
   - See: [TransportTycoon](https://github.com/RichardPalotai/TransportTycoon)
