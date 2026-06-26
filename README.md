@@ -15,7 +15,7 @@ Instructions to run the projects: (Only the projects where runing it is not self
 
 ---
 
-## C:
+## C
   1. Open a terminal and navigate into the folder
   2. To run the projects:<br>
      a. for SpiralMatrix project enter this: "gcc g4jd80.c" and then "./a.out" into the terminal to run the project<br>
@@ -23,7 +23,7 @@ Instructions to run the projects: (Only the projects where runing it is not self
 
 ---
 
-## C#:
+## C#
   - **Event-Driven focused applications:**
     1. Download the folder from any of the three assignment folders which strat with Windows_Forms/WPF/Avalonia
     2. Click on the BlackHole.sln file (This step assumes you have Visual Studio and the Avalonia/Avalonia_Templates extensions for Visual Studio downloaded)
