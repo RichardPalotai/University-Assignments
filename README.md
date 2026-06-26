@@ -10,7 +10,7 @@ Instructions to run the projects: (Only the projects where runing it is not self
 
 ---
 
-## HTML&CSS / JavaScript:
+## HTML&CSS / JavaScript
 - Just double click the index.html
 
 ---
