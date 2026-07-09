@@ -1,23 +1,11 @@
 # University-Assignments
 This repository contains all the important assignments I worked on during my undergraduate years.
 
-## Instructions to run the projects: (Only the projects where runing it is not self explanatory)
+## Instructions to run the projects:
+> (Only the projects where runing it is not self explanatory)
 
 ### Python
 - REST_API: Follow the instructions in the pdf included
-
----
-
-### HTML&CSS / JavaScript
-- Just double click the index.html
-
----
-
-### C
-  1. Open a terminal and navigate into the folder
-  2. To run the projects:<br>
-     a. for SpiralMatrix project enter this: "gcc g4jd80.c" and then "./a.out" into the terminal to run the project<br>
-     b. for EasterBunny project enter this: "gcc husvet_v2.0.c -o husvet.out" and then "./husvet.out" into the terminal to run the project
 
 ---
 
@@ -29,4 +17,23 @@ This repository contains all the important assignments I worked on during my und
   - **Software Technology, Git managing and CI/CD (Team Work):**
     > TransportTycoon project files are in another repository
     - See more: [TransportTycoon](https://github.com/RichardPalotai/TransportTycoon)
+
+---
+
+### Java
+- Double click the FractalTree.iml (This assumes you have IntelliJ IDEA)
+
+---
+
+### HTML&CSS / JavaScript
+- Double click the index.html
+
+---
+
+### C
+  1. Open a terminal and navigate into the folder
+  2. To run the projects:<br>
+     a. for SpiralMatrix project enter this: "gcc g4jd80.c" and then "./a.out" into the terminal to run the project<br>
+     b. for EasterBunny project enter this: "gcc husvet_v2.0.c -o husvet.out" and then "./husvet.out" into the terminal to run the project
+
     
