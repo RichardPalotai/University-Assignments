@@ -1,7 +1,7 @@
 ## University-Assignments
 This repository contains all the important assignments I worked on during my undergraduate years.
 
-## <u>Instructions to run the projects: (Only the projects where runing it is not self explanatory)</u>
+## Instructions to run the projects: (Only the projects where runing it is not self explanatory)
 
 # Python
 - REST_API: Follow the instructions in the pdf included
